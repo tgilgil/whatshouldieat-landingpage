@@ -1,0 +1,16 @@
+#hero {
+    background-image: url('/assets/img/1.jpg');
+    background-size: cover;
+    color: white;
+    border-radius: 0 0 0 200px;
+    height: 90vh;
+}
+
+#hero #logo {
+    width: 100px;
+}
+
+#hero h1, #hero h2 {
+    text-shadow: 2px 2px black;
+}
+

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>whatshouldieat.xyz</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/style.css" />
+    </head>
+
+    <body>
+        <section id="hero">
+            <nav class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <img id="logo" alt="What Should I Eat?" src="/assets/img/logo.png" />
+                    </div>
+    
+                    <div class="col-md-6 col-sm-12">
+                        <button type="button" class="btn btn-info float-md-right">Try it now</button>                
+                        <button type="button" class="btn btn-dark float-md-right">Install on Chrome</button>                    
+                    </div>
+                </div>
+            </nav>
+    
+            <header class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 offset-md-6 col-sm-12">
+                        <h1>{{ site.product_name }}</h1>                                                
+                        <h2>{{ site.product_short_description }}</h2>
+                        <button type="button" class="btn btn-info" onclick="document.querySelector('#preview').scrollIntoView({ behavior: 'smooth' });">I want to know what to eat</button>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <section id="preview" class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-info" onclick="document.querySelector('#preview').scrollIntoView({ behavior: 'smooth' });">I want to know what to eat</button>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="laptops" alt="What Should I Eat?" src="/assets/img/laptops.png" />
+                </div>
+            </div>
+        </section>
+
+        <section id="content-creator" class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img class="icon" alt="What Should I Eat?" src="/assets/img/icon_1.png" />
+                    <h3>Lorem Ipsum</h3>
+                    <p>Sub text</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-info" onclick="document.querySelector('#preview').scrollIntoView({ behavior: 'smooth' });">I want to know what to eat</button>                    
+                </div>
+            </div>
+        </section>
+
+        <main>
+            {{ content }}
+        </main>
+    </body>
+</html>
